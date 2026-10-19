@@ -10,8 +10,8 @@ broken proof is quiet, and it agrees with you.
 | | Domain | The measured failure |
 |---|---|---|
 | [aml-agent-evaluation](https://github.com/IvanSFlowGit/aml-agent-evaluation) | evaluating an AI decision agent | precision reported at **8.3%** when the real figure was **91.7%** |
-| [prompt-decomposition](https://github.com/IvanSFlowGit/prompt-decomposition) | auditing an accreted system prompt | **28 rules, 7 silently overriding an earlier one**, and one input returning opposite decisions on two runs |
-| [langgraph-error-handler-matrix](https://github.com/IvanSFlowGit/langgraph-error-handler-matrix) | testing a framework's error handling | **6 of 24** on one build, **24 of 24** on another, with 6 of 6 controls still raising in both |
+| [prompt-decomposition](https://github.com/IvanSFlowGit/prompt-decomposition) | auditing an accreted system prompt | **28 rules, 7 overriding an earlier rule, 6 of them silently overriding an earlier one**, and one input returning opposite decisions on two runs |
+| [error-policy-matrix](https://github.com/IvanSFlowGit/error-policy-matrix) | testing a framework's error handling | **6 of 24** on one build, **24 of 24** on another, with 6 of 6 controls still raising in both |
 
 ---
 
@@ -62,7 +62,7 @@ consistent model is not safer than the flickering one, only quieter.
 
 ## 3. Zero is not a result until it can name its own cause
 
-**langgraph-error-handler-matrix.**
+**error-policy-matrix.**
 
 A fixture measuring whether a framework's error-handling policies behave
 consistently across execution shapes. Two things in its design carry the whole
